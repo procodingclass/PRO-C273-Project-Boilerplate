@@ -38,19 +38,11 @@ void read_file() {
 
 void read_current_date() {
 
-  /* this fetces the current date and time using the RTC module */
-  DateTime now = rtc.now();
-  current_date = "";
-
-  if (now.day() < 10) {
-    current_date.concat("0");
-  }
-  current_date.concat(now.day());
-  current_date.concat("-");
-  if (now.month() < 10) {
-    current_date.concat("0");
-  }
-  current_date.concat(now.month());
+  /* write code to fetch the current date and time using the RTC module. 
+    Store it in the current_date variable in dd-mm format.
+    You can use rtc.now() method to fetch the date. 
+   */
+  
 
 }
 
